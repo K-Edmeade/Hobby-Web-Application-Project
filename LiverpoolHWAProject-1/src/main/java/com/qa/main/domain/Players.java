@@ -54,12 +54,12 @@ public class Players {
 		this.position = position;
 	}
 
-	public Long getPlayerId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setPlayerId(Long playerId) {
-		this.id = playerId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getFirstName() {
