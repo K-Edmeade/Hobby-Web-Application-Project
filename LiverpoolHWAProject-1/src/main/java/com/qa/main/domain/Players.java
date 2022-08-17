@@ -13,7 +13,7 @@ public class Players {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id;
+	private Long id;
 	@Column(nullable = false)
 	private String firstName;
 	@Column(nullable = false)
@@ -45,7 +45,7 @@ public class Players {
 	public Players(Long id, String firstName, String lastName, String dateOfBirth, int transferFee, String nationality,
 			String position) {
 		super();
-		Id = id;
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.dateOfBirth = dateOfBirth;
@@ -55,11 +55,11 @@ public class Players {
 	}
 
 	public Long getPlayerId() {
-		return Id;
+		return id;
 	}
 
 	public void setPlayerId(Long playerId) {
-		this.Id = playerId;
+		this.id = playerId;
 	}
 
 	public String getFirstName() {
@@ -112,7 +112,7 @@ public class Players {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(Id, lastName, dateOfBirth, firstName, nationality, position, transferFee);
+		return Objects.hash(id, lastName, dateOfBirth, firstName, nationality, position, transferFee);
 	}
 
 	@Override
@@ -124,7 +124,7 @@ public class Players {
 		if (getClass() != obj.getClass())
 			return false;
 		Players other = (Players) obj;
-		return Objects.equals(Id, other.Id) && Objects.equals(lastName, other.lastName)
+		return Objects.equals(id, other.id) && Objects.equals(lastName, other.lastName)
 				&& Objects.equals(dateOfBirth, other.dateOfBirth) && Objects.equals(firstName, other.firstName)
 				&& Objects.equals(nationality, other.nationality) && Objects.equals(position, other.position)
 				&& transferFee == other.transferFee;
