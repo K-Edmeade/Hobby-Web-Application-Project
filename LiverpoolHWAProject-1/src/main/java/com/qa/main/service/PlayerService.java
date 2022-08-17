@@ -46,9 +46,9 @@ public class PlayerService {
 	 };
 
 
-    public Players update( Long Id, Players player) {
+    public Players update(Long id, Players player) {
         // We get the existing entry
-        Players existing = repo.findById(Id).get();
+        Players existing = repo.findById(id).get();
         // Update the existing entry, to match the incoming object
         existing.setFirstName(player.getFirstName());
         existing.setLastName(player.getLastName());

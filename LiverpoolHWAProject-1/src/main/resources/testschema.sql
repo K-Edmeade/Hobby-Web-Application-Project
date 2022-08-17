@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS `customer`;
+DROP TABLE IF EXISTS `players`;
 
 CREATE TABLE `players`(
 `id` BIGINT AUTO_INCREMENT,
