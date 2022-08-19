@@ -1,5 +1,7 @@
 # Hobby-Web-Application-Project
 
+Coverage = 96.2%
+
 Liverpool squad management system
 The liverpool squad management system is able to track Players. Users are able to create, read, update and delete entries.
 
