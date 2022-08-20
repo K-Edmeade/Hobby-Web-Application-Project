@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body onload="getAll()">
+
+    <nav id="navbar" class="navbar bg-light">
+        <img id="liverbird" src="./Live.jpg" alt="logo" border-left: 3px;>
+        <div class="container">
+        </div>
+    </nav>
+
+    <form id="formId" class="row g-3">
+        <div id="nameDiv" class="col-md-6">
+            <input type="text" class="form-control" id="firstNameInput" placeholder="First Name">
+            <input type="text" class="form-control" id="lastNameInput" placeholder="Last Name">
+        </div>
+   
+        <div id="DOBTransferDiv" class="col-12">
+            
+            <input type="date" class="form-control" id="dateOfBirthInput" >
+            <input type="number" class="form-control" id="transferFeeInput" placeholder="Transfer Fee">
+        </div>
+       
+        <div id="posNatDiv" class="col-md-6">
+            
+            <select id="positionInput" class="form-select">
+                <option selected>Position...</option>
+                <option>GK</option>
+                <option>LB</option>
+                <option>RB</option>
+                <option>CB</option>
+                <option>CDM</option>
+                <option>CM</option>
+                <option>LW</option>
+                <option>RW</option>
+                <option>ST</option>
+                <option>CF</option>
+            </select>
+            <input type="text" class="form-control" id="nationalityInput" placeholder="Nationality">
+        </div>
+        
+
+        
+        <div class="col-12">
+            <input type="number" class="form-control" id="idInput" placeholder="ID">
+            <button id="creBtn" type="submit" class="btn btn-danger">Create</button>
+            <button id="updBtn" type="submit" class="btn btn-danger">Update</button>
+            <button id="delBtn" type="submit" class="btn btn-danger">Delete</button>
+
+        </div>
+    </form>
+    <div id="resultsDiv"></div>
+    <img id="champWall" src="./2022-05-19-029-Champions_Wall.jpg" alt="Champions Wall" border-left: 3px;>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./dom.js"> </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
